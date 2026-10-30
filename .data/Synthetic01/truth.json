@@ -1,0 +1,50 @@
+{
+  "point_name": "Synthetic01",
+  "seed": 20261026,
+  "time": {
+    "start": [
+      2011,
+      8,
+      1
+    ],
+    "end_excluded": [
+      2011,
+      8,
+      15
+    ],
+    "time_step_s": 900
+  },
+  "column": {
+    "depth_sensors_m": [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "offset_m": 0.0,
+    "nb_cells": 100
+  },
+  "boundary_conditions": {
+    "river_temperature_mean_C": 20.0,
+    "river_temperature_amplitude_C": 5.0,
+    "river_temperature_period_s": 86400,
+    "river_temperature_phase_rad": 0.0,
+    "bottom_temperature_C": 13.0,
+    "head_difference_m": 0.05
+  },
+  "layers": [
+    {
+      "name": "sand",
+      "zLow": 0.4,
+      "IntrinK": 1e-12,
+      "n": 0.1,
+      "lambda_s": 2.0,
+      "rhos_cs": 4000000.0,
+      "q_s": 0.0
+    }
+  ],
+  "noise": {
+    "sigma_T_K": 0.1,
+    "applied_to": "the three inner sensors"
+  }
+}
